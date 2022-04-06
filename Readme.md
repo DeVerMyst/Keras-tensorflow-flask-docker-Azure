@@ -1,13 +1,5 @@
 # ***Une toute petite application en flask, dans un conteneur et tournant sur Azur***
 
->### Créer et sauvegarder le modèle
->
-> à faire en premier 
-
-```console 
-python CreateModel.py
-```
-
 >#### Faire tourner en local 
 ```console
 pip install -r requirements.txt
