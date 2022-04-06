@@ -1,14 +1,10 @@
 import tensorflow as tf
-from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg19 import preprocess_input
 from keras.applications.vgg19 import decode_predictions
 
-# model = tf.keras.applications.VGG19() 
-## save the weights to a HDF5 file 
-# model.save('my_model.h5')
-
 model = tf.keras.models.load_model('app/weights/my_model.h5', compile=False)
+
 def process_image(image):
     '''
     Pre processing de l'image pour la rendre utilisable par le modèle VGG19

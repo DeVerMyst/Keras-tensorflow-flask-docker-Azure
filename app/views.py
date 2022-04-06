@@ -42,9 +42,8 @@ def results():
             # Traitement de l'image
             image = process_image(image)
             # Prediction
-            # prediction, percentage = predict_class(image) 
-            prediction=0 
-            percentage=0
+            prediction, percentage = predict_class(image) 
+            
             urlimg = join('static','img', filename)     
             return render_template("results.html",urlimg=urlimg, prediction=prediction, percentage=percentage)
 
