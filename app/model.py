@@ -3,7 +3,8 @@ from keras.preprocessing.image import img_to_array
 from keras.applications.vgg19 import preprocess_input
 from keras.applications.vgg19 import decode_predictions
 
-model = tf.keras.models.load_model('app/weights/my_model.h5', compile=False)
+# model = tf.keras.models.load_model('app/weights/my_model.h5', compile=False)
+model = tf.keras.applications.VGG19()
 
 def process_image(image):
     '''
