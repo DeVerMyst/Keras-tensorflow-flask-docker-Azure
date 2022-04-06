@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+{% block title %}Keras TF Flask Docker Azur{% endblock %}
+{% block body %}
+<h3>
+    Choisissez une image à uploader
+</h3>
+<form method="POST" enctype="multipart/form-data" action="/results">
+    <input type="file" name="file" accept="image/*">
+    <input type="submit" >
+</form>
+{% endblock %}

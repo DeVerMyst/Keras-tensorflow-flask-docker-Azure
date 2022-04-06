@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>        
+        <link rel="shortcut icon" href= {{url_for('static', filename="images/favicon.ico")}}  type="image/x-icon"> 
+        <link href="{{ url_for('static', filename='css/mycss.css') }}" rel="stylesheet">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    
+    <body>
+        <div >
+            <div >
+                <nav>
+                        <div class="homebutton"> <a href="/">Home</a> </div>
+                </nav>
+            </div>    
+        </div> 
+    </body>
+    Une petite application utilisant le modèle VGG19 de Keras pour la reconnaissance d'image. 
+
+
+    {% block body %}{% endblock %}    
+    
+    <hr class="espace">
+    <footer class="footer">        
+        
+        <img src= {{url_for('static', filename="images/keras.png")}} style="display:inline" height="50"/>
+        <img src= {{url_for('static', filename="images/tensorflow.png")}} style="display:inline" height="50"/>
+        <img src= {{url_for('static', filename="images/flask.png")}} style="display:inline" height="50"/>
+        <img src= {{url_for('static', filename="images/docker.png")}} style="display:inline" height="50"/>
+        <img src= {{url_for('static', filename="images/Azure.png")}} style="display:inline" height="50"/>                        
+    </footer>
+    <hr class="espace">
+    <p>A.schutz 2022 - Microsoft - simplon</p>
+
+</html>

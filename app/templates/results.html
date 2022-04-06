@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Résultats{% endblock %}
+{% block body %}
+<h3>Résultats de la prédiction</h3>
+
+<div class="container-img-texte">
+    <p class="img-texte">
+        <img src="{{ urlimg }}"  >
+
+            La prediction est: {{prediction}} avec une probabilité de: {{percentage}}
+
+    </p>
+</div>
+
+{% endblock %}
