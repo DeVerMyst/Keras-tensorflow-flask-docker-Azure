@@ -46,3 +46,5 @@ def predict_class(image):
 #     image = process_image(image)
 #     prediction, percentage = predict_class(image)
 #     print(prediction, percentage)
+
+
